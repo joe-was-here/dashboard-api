@@ -1,0 +1,73 @@
+meta {
+  name: Create Patient
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/patients/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "",
+    "lastName": "",
+    "dateOfBirth": "",
+    "email": "",
+    "phone": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "country": ""
+    },
+    "emergencyContact": {
+      "name": "",
+      "relationship": "",
+      "phone": "",
+      "email": ""
+    },
+    "medicalInfo": {
+      "allergies": [],
+      "currentMedications": [
+        {
+          "id": "",
+          "name": "",
+          "dosage": "",
+          "frequency": "",
+          "prescribedBy": "",
+          "startDate": "",
+          "endDate": "",
+          "isActive": false
+        }
+      ],
+      "conditions": [],
+      "bloodType": "",
+      "lastVisit": "",
+      "status": ""
+    },
+    "insurance": {
+      "provider": "",
+      "policyNumber": "",
+      "groupNumber": "",
+      "effectiveDate": "",
+      "expirationDate": "",
+      "copay": "",
+      "deductible": ""
+    },
+    "documents": [
+      {
+        "id": "",
+        "type": "",
+        "name": "",
+        "uploadDate": "",
+        "fileSize": 0,
+        "mimeType": "",
+        "url": ""
+      }
+    ]
+  }
+}

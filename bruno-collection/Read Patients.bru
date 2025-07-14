@@ -1,0 +1,16 @@
+meta {
+  name: Read Patients
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/patients?limit=25
+  body: none
+  auth: none
+}
+
+params:query {
+  limit: 25
+  ~skip: 
+}
