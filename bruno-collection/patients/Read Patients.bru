@@ -5,12 +5,12 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/patients?limit=25
+  url: {{baseUrl}}/patients/
   body: none
   auth: none
 }
 
 params:query {
-  limit: 25
-  ~skip: 
+  ~cursor: 
+  ~limit: 
 }
